@@ -1,0 +1,6 @@
+INPUT_USERNAME = 'css:[data-test="username"]'
+INPUT_PASSWORD = 'css:[data-test="password"]'
+LOGIN_BUTTON = 'css:[data-test="login-button"]'
+ALERT_ERROR = 'css:h3[data-test="error"]'
+ALERT_CONTAINER = '.error-message-container.error'
+HOME_PAGE_LOGO = 'css:.app_logo'
