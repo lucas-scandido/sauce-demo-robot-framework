@@ -1,0 +1,9 @@
+{
+    "messages": {
+        "login": {
+            "general": "Epic sadface: Username and password do not match any user in this service",
+            "username": "Epic sadface: Username is required",
+            "password": "Epic sadface: Password is required"
+        }
+    }
+}
