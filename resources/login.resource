@@ -1,6 +1,5 @@
 *** Settings ***
 Library     SeleniumLibrary
-Library     JSONLibrary
 
 Variables   ../helpers/locators/locators.py
 
@@ -14,12 +13,6 @@ Submit login form
 
 User should be redirected to the home page
     Wait Until Element Is Visible    ${HOME_PAGE_LOGO}
-
-Get fixture
-    [Arguments]    ${fixture_name}  ${field}
-    ${data}        Load Json From File    
-    ...            ${EXECDIR}/helpers/fixtures/${fixture_name}.json
-    RETURN         ${data}[${field}]
 
 Alert error should be
     [Arguments]               ${expected_alert}
