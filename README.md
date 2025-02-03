@@ -40,14 +40,17 @@ The project structure was developed based on documentation: [Robot Framework - P
 ├── helpers/                            # Helpers resources needed to run the tests, including fixtures and locators    
     └── fixtures/                       # Contains static data files that are used when running tests                                   
         └── alerts.json                 # JSON file that contains all error messages displayed by alerts returned by the application                                  
-        └── credentials.json            # JSON file that contains invalid user credentials for authentication                                
+        └── credentials.json            # JSON file that contains invalid user credentials for authentication
+        └── inventory.json              # JSON file that contains all inventory item details                                 
     └── locators/                       # Locators used to interact with page elements                                  
         └── locators.py                 # Python file containing the mapped locators   
 ├── resources/                          # Reusable keywords                                                                                       
-    └── common.resource                 # General Keywords are stored here                               
+    └── common.resource                 # General Keywords are stored here
+    └── common.resource                 # Keywords for inventory are stored here                               
     └── login.resource                  # Keywords for login are stored here                                                       
-├── tests/                              # Test Suites                                
-    └── login.robot                     # Test Suite for login functionality             
+├── tests/                              # Test Suites
+    └── inventory.robot                 # Test Suite for inventory                                  
+    └── login.robot                     # Test Suite for login             
 ├── README.md                           # Project documentation      
 ├── .gitignore                          # Which files and folders should be ignored by Git       
 ├── requirements.txt                    # List of dependencies needed to run the project                              
@@ -55,6 +58,6 @@ The project structure was developed based on documentation: [Robot Framework - P
 
 # Test Execution Scripts
 ```
-robot -d ./logs tests/                  # Run all tests in interactive mode.
-robot --include <tag_name>              # Runs only tests with the specified tag in interactive mode.
+robot -d ./logs tests/                            # Run all tests in interactive mode.
+robot -d ./logs --include <tag_name> tests/       # Runs only tests with the specified tag in interactive mode.
 ```
