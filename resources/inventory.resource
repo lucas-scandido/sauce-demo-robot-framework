@@ -32,13 +32,13 @@ Display inventory details
         
     Checks details of inventory items   ${inventory_name}    ${inventory_description}    ${inventory_price}
     
-    Wait Until Element Is Visible    ${BTN_BUY_INVENTORY}
-    Element Should Be Enabled        ${BTN_BUY_INVENTORY}
-    ${count}    Get Element Count    ${BTN_BUY_INVENTORY}
+    Wait Until Element Is Visible    ${BTN_ADD_INVENTORY_TO_CART}
+    Element Should Be Enabled        ${BTN_ADD_INVENTORY_TO_CART}
+    ${count}    Get Element Count    ${BTN_ADD_INVENTORY_TO_CART}
     Should Be Equal As Numbers       ${count}    ${expected_count}
 
-Click on inventory
-    [Arguments]                    ${inventory_name}
+Click on inventory item
+    [Arguments]    ${inventory_name}
 
     ${locator} =   Set Variable    ${INVENTORY_ITEM.replace('{}', "${inventory_name}")}
 
@@ -47,9 +47,9 @@ Click on inventory
     Click Element                  ${locator}
 
 Inventory item details 
-    [Arguments]                          ${inventory_name}    ${inventory_description}    ${inventory_price}
+    [Arguments]    ${inventory_name}    ${inventory_description}    ${inventory_price}
     
     Checks details of inventory items    ${inventory_name}    ${inventory_description}    ${inventory_price}
 
-    Wait Until Element Is Visible        ${BTN_BUY_INVENTORY_ITEM}
-    Element Should Be Enabled            ${BTN_BUY_INVENTORY_ITEM}
+    Wait Until Element Is Visible        ${BTN_ADD_ITEM_TO_CART}
+    Element Should Be Enabled            ${BTN_ADD_ITEM_TO_CART}
