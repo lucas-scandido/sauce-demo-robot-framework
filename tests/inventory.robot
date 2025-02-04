@@ -1,5 +1,5 @@
 *** Settings ***
-Documentation    This test suite verifies the invetory page and invetory page details.
+Documentation    This test suite verifies the Invetory page and invetory page details.
 
 Resource         ../helpers/secrets.robot
 Resource         ../resources/common.resource
@@ -50,7 +50,7 @@ Scenario: User should click on the product and be redirected to the inventory it
 
     Go To                             url=${BASE_URL}
     Submit login form                 ${USERNAME}    ${PASSWORD}
-    Click on inventory                ${inventory}[0][name]
+    Click on inventory item           ${inventory}[0][name]
     Inventory item details            ${inventory}[0][name]    ${inventory}[0][description]    ${inventory}[0][price]
 
     Capture Page Screenshot

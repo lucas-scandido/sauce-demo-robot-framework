@@ -1,5 +1,5 @@
 *** Settings ***
-Documentation    This test suite verifies the login functionality of the "Sauce Demo" application.
+Documentation    This test suite verifies the Login of the "Sauce Demo" application.
 
 Resource         ../helpers/secrets.robot
 Resource         ../resources/common.resource

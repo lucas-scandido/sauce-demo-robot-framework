@@ -9,7 +9,7 @@ ${BASE_URL}                https://www.saucedemo.com/
 
 *** Keywords ***
 Start Session
-    Open Browser    browser=chrome
+    Open Browser   browser=chrome
 
 Close Session
     Close Browser

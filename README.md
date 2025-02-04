@@ -44,13 +44,15 @@ The project structure was developed based on documentation: [Robot Framework - P
         └── inventory.json              # JSON file that contains all inventory item details                                 
     └── locators/                       # Locators used to interact with page elements                                  
         └── locators.py                 # Python file containing the mapped locators   
-├── resources/                          # Reusable keywords                                                                                       
+├── resources/                          # Reusable keywords
+    └── cart.resource                   # Keywords for Cart are stored here                                                                                      
     └── common.resource                 # General Keywords are stored here
-    └── common.resource                 # Keywords for inventory are stored here                               
-    └── login.resource                  # Keywords for login are stored here                                                       
+    └── inventory.resource              # Keywords for Inventory are stored here                               
+    └── login.resource                  # Keywords for Login are stored here                                                       
 ├── tests/                              # Test Suites
-    └── inventory.robot                 # Test Suite for inventory                                  
-    └── login.robot                     # Test Suite for login             
+    └── cart.robot                      # Test Suite for Cart 
+    └── inventory.robot                 # Test Suite for Inventory                                  
+    └── login.robot                     # Test Suite for Login             
 ├── README.md                           # Project documentation      
 ├── .gitignore                          # Which files and folders should be ignored by Git       
 ├── requirements.txt                    # List of dependencies needed to run the project                              
