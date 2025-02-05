@@ -4,6 +4,10 @@ Documentation    This file contains common variables and keywords that are used 
 Library     SeleniumLibrary
 Library     JSONLibrary
 
+Resource    ../resources/cart.resource
+Resource    ../resources/inventory.resource
+Resource    ../resources/login.resource
+
 *** Variables ***
 ${BASE_URL}                https://www.saucedemo.com/
 
