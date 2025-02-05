@@ -3,7 +3,6 @@ Documentation    This test suite verifies the Login of the "Sauce Demo" applicat
 
 Resource         ../helpers/secrets.robot
 Resource         ../resources/common.resource
-Resource         ../resources/login.resource
 
 Test Setup       Start Session
 Test Teardown    Close Session

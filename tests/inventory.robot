@@ -3,8 +3,6 @@ Documentation    This test suite verifies the Invetory page and invetory page de
 
 Resource         ../helpers/secrets.robot
 Resource         ../resources/common.resource
-Resource         ../resources/login.resource
-Resource         ../resources/inventory.resource
 
 Test Setup       Start Session
 Test Teardown    Close Session
@@ -14,7 +12,7 @@ Test Teardown    Close Session
 Scenario: Should be displayed a list of six inventorys on the inventory screen
     [Documentation]    Validates the display of inventory items on the screen. 
     ...    It verifies that exactly six products are visible.
-    [Tags]                            inventory_screen
+    [Tags]                            inventory_list
     
     Go To                             url=${BASE_URL}
     Submit login form                 ${USERNAME}    ${PASSWORD}
