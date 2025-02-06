@@ -7,6 +7,7 @@ Library     JSONLibrary
 Resource    ../resources/cart.resource
 Resource    ../resources/inventory.resource
 Resource    ../resources/login.resource
+Resource    ../resources/checkout.resource
 
 *** Variables ***
 ${BASE_URL}                https://www.saucedemo.com/
