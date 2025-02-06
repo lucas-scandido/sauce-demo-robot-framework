@@ -38,19 +38,23 @@ The project structure was developed based on documentation: [Robot Framework - P
 - **Estrutura de Pastas:**
 ```
 ├── helpers/                            # Helpers resources needed to run the tests, including fixtures and locators    
-    └── fixtures/                       # Contains static data files that are used when running tests                                   
-        └── alerts.json                 # JSON file that contains all error messages displayed by alerts returned by the application                                  
-        └── credentials.json            # JSON file that contains invalid user credentials for authentication
-        └── inventory.json              # JSON file that contains all inventory item details                                 
+    └── fixtures/                       # Contains static data files used during test execution                                   
+        └── alerts.json                 # JSON file containing error messages displayed on the login page                                  
+        └── cart.json                   # JSON file that stores data test id of locators to be used randomly in tests
+        └── checkout.json               # JSON file containing all validation data for the checkout steps 
+        └── credentials.json            # JSON file with different user data for general tests         
+        └── inventory.json              # JSON file storing a list of all inventory items details (name, description and price)                              
     └── locators/                       # Locators used to interact with page elements                                  
         └── locators.py                 # Python file containing the mapped locators   
 ├── resources/                          # Reusable keywords
-    └── cart.resource                   # Keywords for Cart are stored here                                                                                      
+    └── cart.resource                   # Cart Keywords are stored here
+    └── checkout.resource               # Checkout Keywords are stored here                                                                                        
     └── common.resource                 # General Keywords are stored here
-    └── inventory.resource              # Keywords for Inventory are stored here                               
-    └── login.resource                  # Keywords for Login are stored here                                                       
+    └── inventory.resource              # Inventory Keywords are stored here                               
+    └── login.resource                  # Login Keywords are stored here                                                       
 ├── tests/                              # Test Suites
     └── cart.robot                      # Test Suite for Cart 
+    └── checkout.robot                  # Test Suite for Checkout 
     └── inventory.robot                 # Test Suite for Inventory                                  
     └── login.robot                     # Test Suite for Login             
 ├── README.md                           # Project documentation      
