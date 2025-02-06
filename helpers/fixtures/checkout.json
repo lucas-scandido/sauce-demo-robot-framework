@@ -1,0 +1,20 @@
+{
+    "steps": {
+        "stepOne": {
+            "firstName": "Sauced",
+            "lastName": "User",
+            "zipCode": "08295-005"
+        },
+        "stepTwo": {
+            "paymentMethod": "SauceCard #31337", 
+            "shipping": "Free Pony Express Delivery!",
+            "itemTotal": "Item total: $29.99",
+            "tax": "Tax: $2.40",
+            "total": "Total: $32.39"
+        },
+        "complete": {
+            "title": "Thank you for your order!", 
+            "description": "Your order has been dispatched, and will arrive just as fast as the pony can get there!"
+        }
+    }
+}
