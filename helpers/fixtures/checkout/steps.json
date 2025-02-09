@@ -1,5 +1,5 @@
 {
-    "steps": {
+    "checkoutStep": {
         "stepOne": {
             "firstName": "Sauced",
             "lastName": "User",
@@ -12,7 +12,7 @@
             "tax": "Tax: $2.40",
             "total": "Total: $32.39"
         },
-        "complete": {
+        "stepComplete": {
             "title": "Thank you for your order!", 
             "description": "Your order has been dispatched, and will arrive just as fast as the pony can get there!"
         }
